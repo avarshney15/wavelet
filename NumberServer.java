@@ -17,7 +17,7 @@ class Handler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     s += parameters[1]+'\n';
-                    return s;//String.format("Number increased by %s! It's now %d", parameters[1], num);
+                    return s;
                 }
             }
             return "404 Not Found!";
